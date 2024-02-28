@@ -443,7 +443,7 @@ HTTP1.0最早在网页中使用是在1996年，那个时候只是使用一些较
 
 ### 网络编程（Socket）
 
-![Socket 客户端服务器通讯](https://camo.githubusercontent.com/2bd973e33aa86e292ceadff0a7afa391e618d587a60a7d0e9d3b5fabd24bf794/68747470733a2f2f67697465652e636f6d2f6875696875742f696e746572766965772f7261772f6d61737465722f696d616765732f736f636b65742545352541452541322545362538382542372545372541422541462545362539432538442545352538412541312545352539392541382545392538302539412545382541452541462e6a7067)
+![Socket 客户端服务器通讯](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230545997.png)
 
 #### Socket 中的 read()、write() 函数
 
@@ -484,7 +484,7 @@ ssize_t write(int fd, const void *buf, size_t count);
 
 只有就完了三次握手，但是这个三次握手发生在 Socket 的那几个函数中呢？请看下图：
 
-[![socket 中发送的 TCP 三次握手](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230545997.png)]
+![socket 中发送的 TCP 三次握手](https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost4/%E7%BD%91%E7%BB%9C/socket%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.drawio.png)
 
 从图中可以看出：
 
@@ -501,11 +501,11 @@ ssize_t write(int fd, const void *buf, size_t count);
 
 
 
-#### Socket 中 TCP 的四次握手释放连接
+#### Socket 中 TCP 的四次挥手释放连接
 
 上面介绍了 socket 中 TCP 的三次握手建立过程，及其涉及的 socket 函数。现在我们介绍 socket 中的四次握手释放连接的过程，请看下图：
 
-[![socket 中发送的 TCP 四次握手](https://camo.githubusercontent.com/2856bad1c794d5d0fb7bbfc25e73b36c5b0a01c85d33562749aa3128b2dc85d3/687474703a2f2f696d616765732e636e626c6f67732e636f6d2f636e626c6f67735f636f6d2f736b796e65742f3230313031322f3230313031323132323135373438373631362e706e67)](https://camo.githubusercontent.com/2856bad1c794d5d0fb7bbfc25e73b36c5b0a01c85d33562749aa3128b2dc85d3/687474703a2f2f696d616765732e636e626c6f67732e636f6d2f636e626c6f67735f636f6d2f736b796e65742f3230313031322f3230313031323132323135373438373631362e706e67)
+![socket 中发送的 TCP 四次挥手](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230538308.png)
 
 图示过程如下：
 
